@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Comigo · Contato</title>
+</head>
+<body>
+
+    <header>
+        <h1>📬 Fale Comigo</h1>
+        <nav>
+            <p>
+                <a href="index.html">← Voltar ao currículo</a>
+            </p>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Envie sua mensagem</h2>
+            <p>Preencha o formulário abaixo e entrarei em contato o mais breve possível.</p>
+
+            <form action="sucesso.html" method="get">
+                <fieldset>
+                    <legend>Dados básicos</legend>
+                    
+                    <p>
+                        <label for="nome">Nome completo:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required size="50">
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required size="50">
+                    </p>
+
+                    <p>
+                        <label for="assunto">Assunto:</label><br>
+                        <input type="text" id="assunto" name="assunto" placeholder="Qual o motivo do contato?" required size="50">
+                    </p>
+
+                    <p>
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="6" cols="50" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações complementares</legend>
+
+           
+                    <p>
+                        <label for="telefone">Telefone (opcional):</label><br>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                    </p>
+
+               
+                    <p>
+                        <label for="data_contato">Melhor data para contato:</label><br>
+                        <input type="date" id="data_contato" name="data_contato">
+                    </p>
+
+              
+                    <p>
+                        <label for="conheceu">Como me conheceu?</label><br>
+                        <select id="conheceu" name="conheceu">
+                            <option value="">Selecione uma opção</option>
+                            <option value="linkedin">LinkedIn</option>
+                            <option value="github">GitHub</option>
+                            <option value="indicacao">Indicação de amigo</option>
+                            <option value="faculdade">Faculdade</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </p>
+
+                
+                    <p>
+                        <strong>Preferência de contato:</strong><br>
+                        <input type="radio" id="contato_email" name="pref_contato" value="email" checked>
+                        <label for="contato_email">E-mail</label><br>
+                        <input type="radio" id="contato_whatsapp" name="pref_contato" value="whatsapp">
+                        <label for="contato_whatsapp">WhatsApp</label><br>
+                        <input type="radio" id="contato_telefone" name="pref_contato" value="telefone">
+                        <label for="contato_telefone">Ligação</label>
+                    </p>
+                    <p>
+                        <strong>Áreas de interesse (opcional):</strong><br>
+                        <input type="checkbox" id="interesse_dev" name="interesse_dev" value="desenvolvimento">
+                        <label for="interesse_dev">Desenvolvimento Web</label><br>
+                        <input type="checkbox" id="interesse_estagio" name="interesse_estagio" value="estagio">
+                        <label for="interesse_estagio">Oportunidade de estágio</label><br>
+                        <input type="checkbox" id="interesse_projeto" name="interesse_projeto" value="projeto">
+                        <label for="interesse_projeto">Projeto colaborativo</label><br>
+                        <input type="checkbox" id="interesse_outro" name="interesse_outro" value="outro">
+                        <label for="interesse_outro">Outro assunto</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <em>Campos marcados com "required" são obrigatórios.</em>
+                </p>
+
+                <p>
+                    <button type="reset">🧹 Limpar formulário</button>
+                    <button type="submit">📨 Enviar mensagem</button>
+                </p>
+            </form>
+        </section>
+
+        <hr>
+
+        <p>
+            <a href="index.html">🏠 Voltar para a página inicial</a>
+        </p>
+    </main>
+
+    <footer>
+        <hr>
+        <p>
+            <strong>© 2025 — Formulário de contato</strong><br>
+            <time datetime="2026-03-15">Março de 2026</time>
+        </p>
+    </footer>
+
+</body>
+</html>
